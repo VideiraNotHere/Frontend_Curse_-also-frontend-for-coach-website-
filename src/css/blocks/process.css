@@ -1,0 +1,97 @@
+
+.timeline {
+  position: relative;
+  padding-left: 80px;
+  margin-top: var(--space-2xl);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 32px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), var(--surface-border));
+}
+
+.timeline__item {
+  position: relative;
+  padding-bottom: var(--space-2xl);
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__step {
+  position: absolute;
+  left: -80px;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 6px var(--bg);
+  z-index: 2;
+}
+
+.section--alt .timeline__step {
+  box-shadow: 0 0 0 6px var(--bg-alt);
+}
+
+.timeline__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-xs);
+}
+
+.timeline__text {
+  font-size: var(--fs-md);
+  color: var(--text);
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+/* --- Адаптив: Процесс --- */
+@media (max-width: 968px) {
+  .timeline {
+    padding-left: 64px;
+  }
+
+  .timeline::before {
+    left: 24px;
+  }
+
+  .timeline__step {
+    left: -64px;
+    width: 40px;
+    height: 40px;
+    font-size: var(--fs-sm);
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    padding-left: 56px;
+  }
+
+  .timeline::before {
+    left: 18px;
+  }
+
+  .timeline__step {
+    left: -56px;
+    width: 32px;
+    height: 32px;
+    font-size: var(--fs-xs);
+  }
+}

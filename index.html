@@ -1,0 +1,1232 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Индивидуальный коучинг — глубинная работа с мышлением, решениями и внутренней опорой. Системный подход к трансформации. Алексеева Ольга."
+    />
+    <meta
+      name="keywords"
+      content="коучинг, NLP, гештальт, бизнес-коучинг, индивидуальный коучинг, трансформация мышления"
+    />
+    <title>Индивидуальный коучинг — Алексеева Ольга | Глубинная работа с мышлением</title>
+
+    <!-- Preloader (FOUC prevention) -->
+    <style>
+      body {
+        visibility: hidden;
+        background-color: #fdfaf5;
+      }
+      body.is-loaded {
+        visibility: visible !important;
+      }
+    </style>
+    <script>
+      window.addEventListener('load', function () {
+        document.body.classList.add('is-loaded');
+      });
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Vite Entry -->
+    <script type="module" src="/src/js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- ==================== HERO WRAPPER ==================== -->
+    <div class="hero-wrapper">
+      <header class="header" id="header">
+        <div class="container header__inner">
+          <a href="#" class="header__logo">
+            <span class="header__logo-name">Алексеева Ольга</span>
+            <span class="header__logo-tagline">Индивидуальный коучинг</span>
+          </a>
+
+          <nav class="header__nav" id="mainNav">
+            <ul class="header__nav-list">
+              <li><a href="#experience" class="header__nav-link">Обо мне</a></li>
+              <li><a href="#services" class="header__nav-link">Услуги</a></li>
+              <li><a href="#process" class="header__nav-link">Как мы работаем</a></li>
+              <li><a href="#faq" class="header__nav-link">FAQ</a></li>
+              <li><a href="#footer" class="header__nav-link">Контакты</a></li>
+
+              <!-- Dzen Link -->
+              <li class="header__nav-item--icon dz-container">
+                <a
+                  href="https://dzen.ru/coach_alekseeva"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="header__icon-link"
+                >
+                  <img src="/images/dzen-logo2.png" alt="Яндекс Дзен" class="header__dzen-logo" />
+                  <span class="dz-tooltip">Я на Дзене</span>
+                </a>
+              </li>
+
+              <!-- Phone Popup Link -->
+              <li class="header__nav-item--icon">
+                <button
+                  type="button"
+                  class="header__icon-btn"
+                  id="phonePopupTrigger"
+                  aria-label="Показать номер телефона"
+                >
+                  <svg
+                    class="header__icon"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="#services" class="btn btn--primary header__cta">Ознакомительная встреча</a>
+
+          <button class="header__burger" id="burgerBtn" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- ==================== HERO ==================== -->
+      <section class="hero" id="hero">
+        <div class="container hero__inner">
+          <div class="hero__content fade-in">
+            <p class="hero__eyebrow">Индивидуальный коучинг</p>
+            <h1 class="hero__title">
+              Старое становится тесным.<br />Пришло время для нового&nbsp;уровня.
+            </h1>
+            <p class="hero__subtitle">
+              Глубинная работа для тех, кто готов к&nbsp;настоящим изменениям. Когда старые
+              стратегии перестают работать &mdash; появляется опора в&nbsp;решениях
+              и&nbsp;действиях.
+            </p>
+            <div class="hero__actions">
+              <a href="#services" class="btn btn--primary btn--large"
+                >Записаться на ознакомительную встречу</a
+              >
+              <a href="#experience" class="btn btn--outline btn--large btn--hero-alt"
+                >Узнать подробнее</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== HOW I WORK (Как я работаю) ==================== -->
+    <section class="how-i-work section section--alt" id="how-i-work">
+      <div class="container">
+        <h2 class="section__title fade-in">Работаю в точках перехода</h2>
+        <div class="how-i-work__text fade-in">
+          <p>
+            Я помогаю людям в моментах, когда старые стратегии перестают работать.<br />
+            В работе со мной включается свет — становится ясно, куда двигаться дальше.<br />
+            Появляется опора в решениях и действиях.
+          </p>
+        </div>
+
+        <h3 class="how-i-work__subtitle fade-in">В работе объединяю разные направления</h3>
+        <div class="how-i-work__pillars">
+          <!-- Пиллар 1 -->
+          <div class="pillar-card fade-in">
+            <div class="pillar-card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h4 class="pillar-card__title">Коучинг</h4>
+            <p class="pillar-card__text">
+              Структурированный диалог, который помогает увидеть слепые зоны и сформулировать
+              настоящую цель.
+            </p>
+          </div>
+          <!-- Пиллар 2 -->
+          <div class="pillar-card fade-in">
+            <div class="pillar-card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+            <h4 class="pillar-card__title">NLP</h4>
+            <p class="pillar-card__text">
+              Техники нейролингвистического программирования для работы с убеждениями и паттернами
+              мышления.
+            </p>
+          </div>
+          <!-- Пиллар 3 -->
+          <div class="pillar-card fade-in">
+            <div class="pillar-card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="4"></circle>
+              </svg>
+            </div>
+            <h4 class="pillar-card__title">Гештальт</h4>
+            <p class="pillar-card__text">
+              Осознанность «здесь и сейчас» — завершение незакрытых процессов, работа с чувствами и
+              границами.
+            </p>
+          </div>
+          <!-- Пиллар 4 -->
+          <div class="pillar-card fade-in">
+            <div class="pillar-card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                ></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <h4 class="pillar-card__title">Бизнес-мышление</h4>
+            <p class="pillar-card__text">
+              Стратегический взгляд на ваши решения через призму предпринимательского опыта и
+              системного мышления.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE (Мой опыт и подход) ==================== -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <p class="section__eyebrow fade-in">Обо мне</p>
+        <h2 class="section__title fade-in">Мой опыт и&nbsp;подход</h2>
+
+        <div class="experience__inner">
+          <div class="experience__photo-col fade-in">
+            <div class="experience__photo-wrap">
+              <img
+                src="/images/coach-about.jpg"
+                alt="Алексеева Ольга — коуч"
+                class="experience__photo"
+                width="400"
+                height="530"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="experience__text-col fade-in">
+            <p>
+              В&nbsp;коучинг и&nbsp;психологию я&nbsp;пришла из&nbsp;бизнеса. Более 10&nbsp;лет
+              я&nbsp;управляю собственной компанией. Выстраиваю процессы, принимаю решения
+              и&nbsp;несу за&nbsp;них ответственность.
+            </p>
+            <p>
+              Я&nbsp;знаю, как работают решения в&nbsp;реальности&nbsp;&mdash; когда от&nbsp;них
+              зависят деньги, люди и&nbsp;результат.
+            </p>
+            <p>
+              В&nbsp;какой-то момент стало очевидно, что одних управленческих решений недостаточно.
+              За&nbsp;ними всегда стоит мышление, внутренние реакции и&nbsp;выбор, который человек
+              делает в&nbsp;ситуации.
+            </p>
+            <p>
+              С&nbsp;этого начался мой интерес к&nbsp;психологии и&nbsp;коучингу. Я&nbsp;системно
+              училась, углублялась в&nbsp;подходы и&nbsp;продолжаю это делать.
+            </p>
+            <p>
+              Сейчас в&nbsp;работе я&nbsp;соединяю опыт бизнеса, понимание процессов
+              и&nbsp;профессиональный коучинг.
+            </p>
+            <p>
+              Для меня важно, чтобы менялось не&nbsp;только понимание, но&nbsp;и&nbsp;состояние,
+              из&nbsp;которого человек принимает решения. Когда появляется больше устойчивости
+              и&nbsp;внутреннего ресурса&nbsp;&mdash; решения становятся проще и&nbsp;начинают
+              реализовываться в&nbsp;жизни.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CHALLENGES (С чем ко мне приходят) ==================== -->
+    <section class="section" id="challenges">
+      <div class="container">
+        <p class="section__eyebrow fade-in">Запросы</p>
+        <h2 class="section__title fade-in">С&nbsp;чем ко&nbsp;мне приходят</h2>
+
+        <div class="challenges__grid">
+          <div class="challenge-card fade-in">
+            <div class="challenge-card__icon what-people-bring__icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <p class="challenge-card__text">Принять важное решение и&nbsp;выбрать направление</p>
+          </div>
+          <div class="challenge-card fade-in">
+            <div class="challenge-card__icon what-people-bring__icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </div>
+            <p class="challenge-card__text">
+              Разобраться в&nbsp;сложной ситуации и&nbsp;увидеть варианты
+            </p>
+          </div>
+          <div class="challenge-card fade-in">
+            <div class="challenge-card__icon what-people-bring__icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z" />
+              </svg>
+            </div>
+            <p class="challenge-card__text">
+              Определить, чего вы&nbsp;на&nbsp;самом деле хотите и&nbsp;на&nbsp;чём строить
+              дальнейшие шаги
+            </p>
+          </div>
+          <div class="challenge-card fade-in">
+            <div class="challenge-card__icon what-people-bring__icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <p class="challenge-card__text">
+              Найти внутреннюю опору, чтобы действовать и&nbsp;не&nbsp;откатываться назад
+            </p>
+          </div>
+          <div class="challenge-card fade-in">
+            <div class="challenge-card__icon what-people-bring__icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+              </svg>
+            </div>
+            <p class="challenge-card__text">
+              Снизить внутреннее напряжение и&nbsp;перестать &laquo;застревать&raquo;
+              в&nbsp;размышлениях
+            </p>
+          </div>
+          <div class="challenge-card fade-in">
+            <div class="challenge-card__icon what-people-bring__icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon points="1 6 8 2 16 6 23 2 23 18 16 22 8 18 1 22 1 6"></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+            </div>
+            <p class="challenge-card__text">
+              Выстроить понятный путь действий и&nbsp;начать двигаться
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESULTS (К каким результатам) ==================== -->
+    <section class="section section--alt section--static-bg" id="results">
+      <div class="container">
+        <p class="section__eyebrow fade-in">Результаты</p>
+        <h2 class="section__title fade-in">
+          К&nbsp;каким результатам вы&nbsp;приходите в&nbsp;работе
+        </h2>
+
+        <div class="results__grid">
+          <div class="result-card fade-in">
+            <p class="result-card__text">
+              Появляется понимание, что делать в&nbsp;ситуации, где раньше было ощущение тупика
+            </p>
+          </div>
+          <div class="result-card fade-in">
+            <p class="result-card__text">
+              Решения перестают оставаться на&nbsp;уровне размышлений и&nbsp;переходят
+              в&nbsp;действия
+            </p>
+          </div>
+          <div class="result-card fade-in">
+            <p class="result-card__text">
+              Становится возможным действовать без постоянных сомнений и&nbsp;откатов
+            </p>
+          </div>
+          <div class="result-card fade-in">
+            <p class="result-card__text">Происходит выход из&nbsp;повторяющихся сценариев</p>
+          </div>
+          <div class="result-card fade-in">
+            <p class="result-card__text">
+              Снижается внутреннее напряжение и&nbsp;прекращается бесконечное прокручивание
+            </p>
+          </div>
+          <div class="result-card fade-in">
+            <p class="result-card__text">
+              Возникает ощущение, что вы&nbsp;управляете своими решениями, а&nbsp;не&nbsp;наоборот
+            </p>
+          </div>
+          <div class="result-card fade-in">
+            <p class="result-card__text">
+              Появляется понятный план действий, который можно реализовать
+            </p>
+          </div>
+          <div class="result-card fade-in">
+            <p class="result-card__text">Начинают происходить реальные изменения в&nbsp;жизни</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <p class="section__eyebrow fade-in">Специальные предложения</p>
+        <h2 class="section__title fade-in">Услуги и тарифы</h2>
+        <p class="section__desc fade-in">
+          От&nbsp;знакомства до&nbsp;глубинной трансформации. Выберите формат, который подходит вам
+          прямо сейчас.
+        </p>
+
+        <div class="services__grid">
+          <!-- Free intro -->
+          <div class="service-card service-card--intro fade-in">
+            <div class="service-card__badge">Бесплатно</div>
+            <h3 class="service-card__title">Ознакомительная встреча</h3>
+            <p class="service-card__duration">20–30 минут</p>
+            <ul class="service-card__features">
+              <li>Знакомство и&nbsp;диагностика запроса</li>
+              <li>Формат и&nbsp;ожидания от&nbsp;работы</li>
+              <li>Ответы на&nbsp;ваши вопросы</li>
+              <li>Без обязательств</li>
+            </ul>
+            <a href="#" class="btn btn--outline service-card__btn" id="btnIntroMeeting"
+              >Записаться</a
+            >
+          </div>
+
+          <!-- 4 sessions -->
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Старт</h3>
+            <p class="service-card__sessions">4 сессии</p>
+            <div class="service-card__price">
+              <span class="service-card__amount">32 000</span>
+              <span class="service-card__currency">₽</span>
+            </div>
+            <ul class="service-card__features">
+              <li>Диагностика и&nbsp;формулировка запроса</li>
+              <li>Работа с&nbsp;ключевым ограничением</li>
+              <li>Поддержка между сессиями</li>
+              <li>Длительность сессии: 60 мин</li>
+            </ul>
+            <button
+              class="btn btn--primary service-card__btn"
+              data-package-id="pkg_start_4"
+              data-price="3200000"
+              data-name="Пакет «Старт» — 4 сессии"
+            >
+              Оплатить пакет
+            </button>
+          </div>
+
+          <!-- 8 sessions -->
+          <div class="service-card service-card--featured fade-in">
+            <div class="service-card__badge">Популярный</div>
+            <h3 class="service-card__title">Закрепление</h3>
+            <p class="service-card__sessions">8 сессий</p>
+            <div class="service-card__price">
+              <span class="service-card__amount">58 000</span>
+              <span class="service-card__currency">₽</span>
+            </div>
+            <ul class="service-card__features">
+              <li>Глубокая работа с&nbsp;паттернами</li>
+              <li>Трансформация убеждений</li>
+              <li>Формирование новой стратегии</li>
+              <li>Поддержка между сессиями</li>
+              <li>Длительность сессии: 60–90 мин</li>
+            </ul>
+            <button
+              class="btn btn--primary service-card__btn"
+              data-package-id="pkg_deep_8"
+              data-price="5800000"
+              data-name="Пакет «Закрепление» — 8 сессий"
+            >
+              Оплатить пакет
+            </button>
+          </div>
+
+          <!-- 12 sessions -->
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">3-месячный спринт</h3>
+            <p class="service-card__sessions">12 сессий</p>
+            <div class="service-card__price">
+              <span class="service-card__amount">78 000</span>
+              <span class="service-card__currency">₽</span>
+            </div>
+            <ul class="service-card__features">
+              <li>Полная перестройка мышления</li>
+              <li>Работа с&nbsp;целями и&nbsp;стратегией</li>
+              <li>Интеграция изменений в&nbsp;жизнь</li>
+              <li>Еженедельные сессии</li>
+              <li>Приоритетная поддержка 24/7</li>
+              <li>Длительность сессии: 90 мин</li>
+            </ul>
+            <button
+              class="btn btn--primary service-card__btn"
+              data-package-id="pkg_sprint_12"
+              data-price="7800000"
+              data-name="Пакет «3-месячный спринт» — 12 сессий"
+            >
+              Оплатить пакет
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROCESS / TIMELINE ==================== -->
+    <section class="process section section--alt section--static-bg-a" id="process">
+      <div class="container">
+        <p class="section__eyebrow fade-in">Как мы работаем</p>
+        <h2 class="section__title fade-in">5&nbsp;шагов к&nbsp;трансформации</h2>
+
+        <div class="timeline">
+          <div class="timeline__item fade-in">
+            <div class="timeline__step">01</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Диагностика</h3>
+              <p class="timeline__text">
+                Есть ощущение, что по-старому уже не&nbsp;работает, но&nbsp;нет понимания, что
+                именно происходит.
+              </p>
+            </div>
+          </div>
+          <div class="timeline__item fade-in">
+            <div class="timeline__step">02</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Цель</h3>
+              <p class="timeline__text">
+                Появляется понимание, чего вы&nbsp;хотите на&nbsp;самом деле и&nbsp;ради чего это
+                для вас важно.
+              </p>
+            </div>
+          </div>
+          <div class="timeline__item fade-in">
+            <div class="timeline__step">03</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Анализ реальности</h3>
+              <p class="timeline__text">
+                Становится видно, что вас останавливает: внутренние ограничения, привычные сценарии,
+                слепые зоны.
+              </p>
+            </div>
+          </div>
+          <div class="timeline__item fade-in">
+            <div class="timeline__step">04</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Возможности</h3>
+              <p class="timeline__text">Появляется выбор там, где раньше казалось, что его нет.</p>
+            </div>
+          </div>
+          <div class="timeline__item fade-in">
+            <div class="timeline__step">05</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">План действий</h3>
+              <p class="timeline__text">
+                Формируется понятный путь и&nbsp;появляется внутренняя готовность действовать.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== QUOTE API (Мысль для рефлексии) ==================== -->
+    <section class="section" id="quoteSection">
+      <div class="container">
+        <div class="quote-api fade-in" id="quoteApiBlock">
+          <p class="quote-api__label">Мысль для рефлексии</p>
+          <p class="quote-api__text">Загружаем мысль дня…</p>
+          <p class="quote-api__author"></p>
+          <button class="quote-api__refresh" id="quoteRefreshBtn" type="button">
+            ↻ Новая мысль
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS (Отзывы) — ПЕРЕД сертификатами ==================== -->
+    <section class="section section--alt" id="testimonials">
+      <div class="container">
+        <p class="section__eyebrow fade-in">Отзывы</p>
+        <h2 class="section__title fade-in">Что говорят клиенты</h2>
+
+        <div class="testimonials__grid">
+          <div class="testimonial-card fade-in">
+            <p class="testimonial-card__text">
+              После нескольких сессий я&nbsp;наконец поняла, что меня останавливало. Появилась
+              ясность и&nbsp;план, по&nbsp;которому я&nbsp;реально двигаюсь вперёд. Ольга создаёт
+              пространство, в&nbsp;котором ты&nbsp;сам находишь ответы.
+            </p>
+            <p class="testimonial-card__author">Анна М.</p>
+            <p class="testimonial-card__role">Предприниматель</p>
+          </div>
+          <div class="testimonial-card fade-in">
+            <p class="testimonial-card__text">
+              Я&nbsp;пришёл с&nbsp;ощущением тупика в&nbsp;карьере. За&nbsp;8&nbsp;сессий
+              не&nbsp;только нашёл путь, но&nbsp;и&nbsp;начал по&nbsp;нему идти. Важно, что это
+              не&nbsp;мотивация на&nbsp;пару дней, а&nbsp;реальные системные изменения.
+            </p>
+            <p class="testimonial-card__author">Дмитрий К.</p>
+            <p class="testimonial-card__role">Руководитель отдела</p>
+          </div>
+          <div class="testimonial-card fade-in">
+            <p class="testimonial-card__text">
+              Работа с&nbsp;Ольгой помогла мне перестать бесконечно прокручивать сценарии
+              в&nbsp;голове и&nbsp;начать действовать. Я&nbsp;чувствую, что впервые за&nbsp;долгое
+              время управляю своей жизнью, а&nbsp;не&nbsp;она&nbsp;мной.
+            </p>
+            <p class="testimonial-card__author">Елена С.</p>
+            <p class="testimonial-card__role">Маркетолог</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATES (Сертификаты) ==================== -->
+    <section class="section" id="certs">
+      <div class="container">
+        <p class="section__eyebrow fade-in">Квалификация</p>
+        <h2 class="section__title fade-in">Сертификаты</h2>
+        <p class="certs__subtitle fade-in">Международный уровень</p>
+
+        <div class="certs-slider-container fade-in" id="certsSliderBlock">
+          <button
+            class="slider-btn slider-btn--prev"
+            id="certsPrev"
+            aria-label="Предыдущие сертификаты"
+            disabled
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="certs-track" id="certsTrack">
+            <!-- Cert 1 -->
+            <div class="cert-card" data-cert="1">
+              <div class="cert-card__img-wrap">
+                <img
+                  src="/images/cert-1.jpg"
+                  alt="Professional Coach Certification"
+                  loading="lazy"
+                />
+              </div>
+              <p class="cert-card__label">Professional Coach Certification (APC, 280 часов)</p>
+            </div>
+            <!-- Cert 2 -->
+            <div class="cert-card" data-cert="2">
+              <div class="cert-card__img-wrap">
+                <img src="/images/cert-2.jpg" alt="Certified Trainer of NLP" loading="lazy" />
+              </div>
+              <p class="cert-card__label">Certified Trainer of NLP (APC)</p>
+            </div>
+            <!-- Cert 3 -->
+            <div class="cert-card" data-cert="3">
+              <div class="cert-card__img-wrap">
+                <img src="/images/cert-3.jpg" alt="Business Trainer" loading="lazy" />
+              </div>
+              <p class="cert-card__label">Business Trainer (APC)</p>
+            </div>
+            <!-- Cert 4 -->
+            <div class="cert-card" data-cert="4">
+              <div class="cert-card__img-wrap">
+                <img
+                  src="/images/cert-4.jpg"
+                  alt="Trainer of Specialized Programs"
+                  loading="lazy"
+                />
+              </div>
+              <p class="cert-card__label">Trainer of Specialized Programs (APC)</p>
+            </div>
+            <!-- Cert 5 -->
+            <div class="cert-card" data-cert="5">
+              <div class="cert-card__img-wrap">
+                <img
+                  src="/images/cert-5.jpg"
+                  alt="Супервизия для NLP-специалистов"
+                  loading="lazy"
+                />
+              </div>
+              <p class="cert-card__label">Супервизия для NLP-специалистов</p>
+            </div>
+            <!-- Cert 6 -->
+            <div class="cert-card" data-cert="6">
+              <div class="cert-card__img-wrap">
+                <img src="/images/cert-6.jpg" alt="NLP Master Practitioner" loading="lazy" />
+              </div>
+              <p class="cert-card__label">NLP Master Practitioner</p>
+            </div>
+            <!-- Cert 7 -->
+            <div class="cert-card" data-cert="7">
+              <div class="cert-card__img-wrap">
+                <img
+                  src="/images/cert-7.jpg"
+                  alt="NLP Master Practitioner (online)"
+                  loading="lazy"
+                />
+              </div>
+              <p class="cert-card__label">NLP Master Practitioner (online)</p>
+            </div>
+            <!-- Cert 8 -->
+            <div class="cert-card" data-cert="8">
+              <div class="cert-card__img-wrap">
+                <img
+                  src="/images/cert-8.jpg"
+                  alt="Coach Certification Association"
+                  loading="lazy"
+                />
+              </div>
+              <p class="cert-card__label">Coach Certification Association (APC, 200 часов)</p>
+            </div>
+            <!-- Cert 9 -->
+            <div class="cert-card" data-cert="9">
+              <div class="cert-card__img-wrap">
+                <img
+                  src="/images/cert-9.jpg"
+                  alt="Переговоры и коммуникация Мастер 80 ч"
+                  loading="lazy"
+                />
+              </div>
+              <p class="cert-card__label">Переговоры и коммуникация Мастер 80 ч</p>
+            </div>
+          </div>
+
+          <button
+            class="slider-btn slider-btn--next"
+            id="certsNext"
+            aria-label="Следующие сертификаты"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="faq section section--alt" id="faq">
+      <div class="container">
+        <p class="section__eyebrow fade-in">Частые вопросы</p>
+        <h2 class="section__title fade-in">FAQ</h2>
+
+        <div class="accordion fade-in" id="faqAccordion">
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Какие запросы можно решать в коучинге?</span>
+              <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9l6 6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <p>
+                Любые ситуации, где нужно разобраться, принять решение или изменить то, что
+                не&nbsp;работает. Чаще всего это про выбор, направление, внутренние противоречия
+                и&nbsp;ощущение, что по-старому уже нельзя.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Как проходит ознакомительная встреча?</span>
+              <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9l6 6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <p>
+                Это первая встреча, на&nbsp;которой мы&nbsp;разбираем вашу ситуацию и&nbsp;понимаем,
+                есть&nbsp;ли смысл работать дальше. Вы&nbsp;получаете первые прояснения
+                и&nbsp;понимание, куда двигаться.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Почему работа выстроена в формате пакета?</span>
+              <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9l6 6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <p>
+                Одна встреча даёт понимание. Изменения происходят, когда вы&nbsp;начинаете
+                действовать и&nbsp;закрепляете новое. Поэтому работа выстроена как процесс.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Можно ли работать разово?</span>
+              <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9l6 6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <p>
+                Можно. Но&nbsp;устойчивые изменения происходят в&nbsp;процессе, поэтому основной
+                формат&nbsp;&mdash; последовательная работа.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Какие результаты можно ожидать?</span>
+              <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9l6 6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <p>
+                Появляется ясность, решения и&nbsp;движение вперёд. Меняется не&nbsp;только
+                понимание ситуации, но&nbsp;и&nbsp;то, как вы&nbsp;действуете в&nbsp;жизни.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Что если у меня нет чёткого запроса?</span>
+              <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9l6 6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <p>
+                Это нормально. Часто работа начинается именно с&nbsp;этого&nbsp;&mdash;
+                с&nbsp;прояснения того, что происходит и&nbsp;что на&nbsp;самом деле важно.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Подойдёт ли мне этот формат?</span>
+              <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9l6 6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <p>
+                Если вы&nbsp;готовы разбираться и&nbsp;брать ответственность
+                за&nbsp;изменения&nbsp;&mdash; да. Формат подойдёт тем, кто хочет не&nbsp;просто
+                понять, а&nbsp;изменить.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Нужно ли как-то готовиться к встречам?</span>
+              <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9l6 6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <p>Нет. Достаточно прийти с&nbsp;тем, что есть сейчас.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Это психотерапия?</span>
+              <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9l6 6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <p>
+                Нет. Фокус&nbsp;&mdash; на&nbsp;текущей ситуации, решениях и&nbsp;действиях.
+                Мы&nbsp;не&nbsp;работаем с&nbsp;диагнозами и&nbsp;не&nbsp;уходим в&nbsp;прошлое.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Как происходит оплата?</span>
+              <svg class="accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9l6 6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <p>
+                Оплата производится перед началом работы. Формат и&nbsp;условия обсуждаются
+                на&nbsp;первой встрече.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BOOKING MODAL ==================== -->
+    <div class="modal" id="bookingModal" aria-hidden="true">
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__dialog">
+        <button class="modal__close" data-modal-close aria-label="Закрыть">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M18 6L6 18M6 6l12 12"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <h3 class="modal__title">Записаться на ознакомительную встречу</h3>
+        <p class="modal__subtitle">Заполните форму, и я свяжусь с вами в течение 24 часов.</p>
+        <form class="modal__form" id="bookingForm">
+          <div class="form-group">
+            <label for="bookingName" class="form-label">Ваше имя</label>
+            <input
+              type="text"
+              id="bookingName"
+              name="name"
+              class="form-input"
+              required
+              placeholder="Как к вам обращаться?"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookingEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              id="bookingEmail"
+              name="email"
+              class="form-input"
+              required
+              placeholder="your@email.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookingPhone" class="form-label">Телефон</label>
+            <input
+              type="tel"
+              id="bookingPhone"
+              name="phone"
+              class="form-input"
+              placeholder="+7 (___) ___-__-__"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookingMessage" class="form-label"
+              >Коротко о вашем запросе <span class="form-label__opt">(необязательно)</span></label
+            >
+            <textarea
+              id="bookingMessage"
+              name="message"
+              class="form-input form-textarea"
+              rows="3"
+              placeholder="Что вас привело?"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-checkbox">
+              <input type="checkbox" class="form-checkbox__input" required />
+              <span class="form-checkbox__text">
+                Даю <a href="consent.html" target="_blank">Согласие</a> на обработку персональных
+                данных на условиях <a href="privacy.html" target="_blank">Политики</a>. Условия
+                публичной <a href="offer.html" target="_blank">Оферты</a>*
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+        </form>
+        <div class="modal__success" id="bookingSuccess" hidden>
+          <div class="modal__success-icon">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2" />
+              <path
+                d="M20 32l8 8 16-16"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h4>Заявка отправлена!</h4>
+          <p>Я свяжусь с вами в ближайшее время.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== CERTIFICATE LIGHTBOX ==================== -->
+    <div class="lightbox" id="certLightbox" aria-hidden="true">
+      <div class="lightbox__overlay" data-lightbox-close></div>
+      <div class="lightbox__inner">
+        <button class="lightbox__close" data-lightbox-close aria-label="Закрыть">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path
+              d="M24 8L8 24M8 8l16 16"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <div class="lightbox__content" id="lightboxContent">
+          <p class="lightbox__placeholder">Изображение сертификата</p>
+        </div>
+        <p class="lightbox__caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+    <!-- ==================== PAYMENT PROCESSING MODAL ==================== -->
+    <div class="modal" id="paymentModal" aria-hidden="true">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog modal__dialog--small">
+        <div class="payment-processing">
+          <div class="spinner"></div>
+          <p>Перенаправляем на страницу оплаты...</p>
+        </div>
+        <div class="payment-error" id="paymentError" hidden>
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" stroke="#c0392b" stroke-width="2" />
+            <path
+              d="M16 16l16 16M32 16L16 32"
+              stroke="#c0392b"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            />
+          </svg>
+          <h4>Ошибка оплаты</h4>
+          <p id="paymentErrorMsg">Произошла ошибка. Пожалуйста, попробуйте ещё раз.</p>
+          <button class="btn btn--outline" data-modal-close>Закрыть</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <div class="footer__logo-wrap">
+              <img
+                src="/images/logo-base.png"
+                alt=""
+                class="footer__logo-img"
+                width="40"
+                height="40"
+                loading="lazy"
+              />
+              <span class="footer__logo-name">Алексеева Ольга</span>
+            </div>
+            <p class="footer__brand-desc">
+              Индивидуальный коучинг, NLP, гештальт-подход. Глубинная работа с мышлением, решениями
+              и внутренней опорой.
+            </p>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__links">
+              <li><a href="#experience">Обо мне</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#process">Как мы работаем</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#footer">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__legal">
+            ИП Алексеева Ольга Витальевна &nbsp;ОГРНИП: 312345678901234, &nbsp;ИНН: 123456789012
+          </p>
+          <div class="footer__docs">
+            <a href="privacy.html">Политика конфиденциальности</a>
+            <a href="consent.html">Согласие на обработку персональных данных</a>
+            <a href="offer.html">Договор-оферта</a>
+          </div>
+        </div>
+      </div>
+      <!-- Scroll-to-top button -->
+      <button class="footer__scroll-top" id="scrollTopBtn" aria-label="Наверх">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </footer>
+  </body>
+</html>

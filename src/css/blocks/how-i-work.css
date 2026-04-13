@@ -1,0 +1,67 @@
+
+.how-i-work {
+  padding-bottom: 0;
+}
+
+.how-i-work__text {
+  font-size: var(--fs-md);
+  color: var(--text-soft);
+  max-width: 720px;
+  line-height: 1.8;
+  margin-bottom: var(--space-3xl);
+}
+
+.how-i-work__subtitle {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  color: var(--text);
+  margin-bottom: var(--space-xl);
+}
+
+.how-i-work__pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* Pillar cards */
+.pillar-card {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.pillar-card__icon {
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+}
+
+.pillar-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-xs);
+}
+
+.pillar-card__text {
+  font-size: var(--fs-sm);
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+/* --- Responsive: how-i-work --- */
+@media (max-width: 600px) {
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}

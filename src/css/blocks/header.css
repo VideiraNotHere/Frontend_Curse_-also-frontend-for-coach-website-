@@ -1,0 +1,243 @@
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(250, 247, 242, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.header.is-scrolled {
+  border-bottom-color: var(--surface-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.header__logo-name {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--text);
+}
+
+.header__logo-tagline {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.header__nav-link {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--text-soft);
+  text-decoration: none;
+  position: relative;
+  padding: 0.25rem 0;
+}
+
+.header__nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width var(--transition);
+}
+
+.header__nav-link:hover {
+  color: var(--accent);
+}
+
+.header__nav-link:hover::after {
+  width: 100%;
+}
+
+/* --- Header Icons & Tooltip --- */
+.header__nav-item--icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: var(--space-sm);
+}
+
+.header__icon-link,
+.header__icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  color: var(--text);
+  background: transparent;
+  transition:
+    background var(--transition),
+    color var(--transition);
+  cursor: pointer;
+}
+
+.header__icon-link:hover,
+.header__icon-btn:hover {
+  background: var(--surface-border);
+  color: var(--accent);
+}
+
+.dz-tooltip {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: var(--text);
+  color: var(--surface);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--transition);
+  z-index: 10;
+}
+
+.dz-container:hover .dz-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.header__dzen-logo {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+
+.header__cta {
+  font-size: var(--fs-xs);
+  padding: 0.625rem 1.25rem;
+}
+
+/* Burger */
+.header__burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+  padding: 4px 0;
+}
+
+.header__burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all var(--transition);
+}
+
+.header__burger.is-active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.header__burger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger.is-active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* --- Адаптив: Шапка --- */
+@media (max-width: 968px) {
+  .header__nav {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--surface-border);
+    padding: var(--space-lg);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .header__nav.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .header__nav-link {
+    font-size: var(--fs-md);
+  }
+
+  .header__cta {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__inner {
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .header__logo-name {
+    font-size: var(--fs-md);
+  }
+
+  .header__nav-item--icon {
+    margin-left: 0;
+  }
+
+  .dz-container {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__dzen-logo {
+    height: 20px;
+  }
+
+  .header__icon-btn {
+    width: 36px;
+    height: 36px;
+  }
+}

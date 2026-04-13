@@ -1,0 +1,74 @@
+
+.quote-api {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+  background: var(--accent-light);
+  border: 1px solid rgba(27, 107, 90, 0.1);
+  border-radius: var(--radius-lg);
+  color: var(--text);
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-api::before {
+  content: '❝';
+  position: absolute;
+  top: -0.5rem;
+  left: 2rem;
+  font-size: 8rem;
+  opacity: 0.05;
+  color: var(--accent);
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+
+.quote-api__label {
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.8;
+  color: var(--accent);
+  margin-bottom: var(--space-md);
+}
+
+.quote-api__text {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: var(--space-md);
+  min-height: 3em;
+  transition: opacity var(--transition);
+}
+
+.quote-api__author {
+  font-size: var(--fs-sm);
+  opacity: 0.8;
+  margin-bottom: var(--space-md);
+}
+
+.quote-api__refresh {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.quote-api__refresh:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* --- Адаптив: Цитата --- */
+@media (max-width: 600px) {
+  .quote-api__text {
+    font-size: var(--fs-lg);
+  }
+}

@@ -1,0 +1,53 @@
+
+.results__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  counter-reset: result-counter;
+}
+
+.result-card {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  position: relative;
+  padding-left: 4.5rem;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+  counter-increment: result-counter;
+  box-shadow: 10px 10px 0 var(--accent);
+}
+
+.result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 14px 14px 0 var(--accent);
+}
+
+.result-card::before {
+  content: counter(result-counter, decimal-leading-zero);
+  position: absolute;
+  left: var(--space-lg);
+  top: var(--space-lg);
+  font-family: var(--font-heading);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--highlight);
+  line-height: 1;
+  opacity: 1;
+  z-index: 2;
+}
+
+.result-card__text {
+  font-size: var(--fs-sm);
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+/* --- Адаптив: Результаты --- */
+@media (max-width: 600px) {
+  .results__grid {
+    grid-template-columns: 1fr;
+  }
+}

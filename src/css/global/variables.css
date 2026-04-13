@@ -1,0 +1,72 @@
+
+
+:root {
+  /* Palette */
+  --bg: #fefcf9;
+  --bg-alt: #f7f3ed;
+  --surface: #ffffff;
+  --surface-border: #e8e0d4;
+
+  --text: #2c2c2c;
+  --text-soft: #6b6559;
+  --text-muted: #9b9487;
+
+  --accent: #1b6b5a;
+  --accent-hover: #237d6a;
+  --accent-deep: #0f3d33;
+  --accent-light: #e6f2ef;
+
+  --highlight: #1a3a5c;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-text: 'Montserrat', sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 2.5rem;
+  --fs-4xl: 3.25rem;
+  --fs-hero: clamp(2.25rem, 5vw, 3.75rem);
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-section: clamp(4rem, 8vw, 7rem);
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-pad: 1.5rem;
+
+  /* Borders */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 50%;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(44, 44, 44, 0.06);
+  --shadow-md: 0 4px 16px rgba(44, 44, 44, 0.08);
+  --shadow-lg: 0 8px 32px rgba(44, 44, 44, 0.12);
+  --shadow-card: 0 2px 12px rgba(44, 44, 44, 0.06);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition: 0.3s var(--ease-out);
+  --transition-slow: 0.6s var(--ease-out);
+}

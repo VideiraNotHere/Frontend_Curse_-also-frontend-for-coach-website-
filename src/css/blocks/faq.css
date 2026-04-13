@@ -1,0 +1,67 @@
+
+.accordion {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.accordion__item {
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.accordion__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) 0;
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  color: var(--text);
+  text-align: left;
+  transition: color var(--transition);
+}
+
+.accordion__trigger:hover {
+  color: var(--accent);
+}
+
+.accordion__icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: var(--space-sm);
+  transition: transform var(--transition);
+  color: var(--text-muted);
+}
+
+.accordion__trigger[aria-expanded='true'] .accordion__icon {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.5s var(--ease-out),
+    padding 0.5s var(--ease-out);
+}
+
+.accordion__content p {
+  padding-bottom: var(--space-md);
+  font-size: var(--fs-sm);
+  color: var(--text-soft);
+  line-height: 1.8;
+}
+
+.accordion__item.is-open .accordion__content {
+  max-height: 500px;
+}
+
+/* --- Адаптив: FAQ --- */
+@media (max-width: 600px) {
+  .accordion__trigger {
+    font-size: var(--fs-base);
+  }
+}

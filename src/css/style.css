@@ -1,0 +1,25 @@
+
+
+/* --- Шрифты --- */
+@import '../vendor/css/fonts.css';
+
+/* --- Глобальные стили --- */
+@import './global/variables.css';
+@import './global/reset.css';
+@import './global/typography.css';
+
+/* --- Блоки --- */
+@import './blocks/header.css';
+@import './blocks/hero.css';
+@import './blocks/how-i-work.css';
+@import './blocks/about.css';
+@import './blocks/requests.css';
+@import './blocks/results.css';
+@import './blocks/services.css';
+@import './blocks/process.css';
+@import './blocks/quote-api.css';
+@import './blocks/testimonials.css';
+@import './blocks/certificates.css';
+@import './blocks/faq.css';
+@import './blocks/modals.css';
+@import './blocks/footer.css';
