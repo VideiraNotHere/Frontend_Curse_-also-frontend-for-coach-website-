@@ -191,6 +191,7 @@
 
   .hero__actions {
     flex-direction: column;
+    padding: 0 var(--space-md);
   }
 
   .hero__actions .btn {

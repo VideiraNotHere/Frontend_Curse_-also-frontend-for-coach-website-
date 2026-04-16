@@ -59,7 +59,7 @@ export default class PhonePopup {
             </div>
             <h3 style="font-family: var(--font-heading); font-size: var(--fs-xl); margin-bottom: 0.5rem; color: var(--text);">Связь со мной</h3>
             <p style="font-size: var(--fs-sm); color: var(--text-soft); margin-bottom: var(--space-md);">Звоните или пишите в мессенджеры</p>
-            <a href="tel:+79645126565" style="display: block; font-family: var(--font-text); font-weight: var(--fw-bold); font-size: var(--fs-xl); color: var(--highlight); text-decoration: none; margin-bottom: var(--space-lg); letter-spacing: 0.05em;">${this.phoneNumber}</a>
+            <a href="tel:+79645126565" style="display: block; font-family: var(--font-text); font-weight: var(--fw-bold); font-size: 1.25rem; white-space: nowrap; color: var(--highlight); text-decoration: none; margin-bottom: var(--space-lg); letter-spacing: 0.05em;">${this.phoneNumber}</a>
             <button class="btn btn--primary" id="phonePopupCloseBtn" style="width: 100%;">Хорошо</button>
         `;
 
